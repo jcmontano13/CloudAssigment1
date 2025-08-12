@@ -86,7 +86,7 @@ app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
 
 const PORT = process.env.PORT || 3000; // Use port 3000 for local development if PORT not set
-db.connecToDatabse()
+db.connectToDatabase()
     .then(function () {
         // listening to port
         app.listen(PORT);
